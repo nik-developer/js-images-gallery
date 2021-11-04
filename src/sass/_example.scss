@@ -1,0 +1,131 @@
+body {
+  background-image: url(../images/whitey.png);
+}
+
+.search-form {
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+.stats {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+
+  background-color: rgba(248, 237, 237, 0.5);
+  transition: bottom 300ms;
+}
+.gallety-item:hover .stats {
+  transform: translateY(-100%);
+  transition: linear;
+  transition-duration: 250ms;
+}
+
+.stats-item {
+  margin-bottom: 0;
+}
+.svg {
+  fill: black;
+}
+.stats-item:hover .svg {
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition-duration: 300ms;
+
+  fill: honeydew;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.gallety-item {
+  max-width: 354px;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  border: 5px solid transparent;
+
+  border-radius: 0.5rem;
+  border-color: rgb(109, 155, 242);
+  background-color: cornflowerblue;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: hsla(243, 78%, 73%, 0.898);
+}
+.input:focus {
+  border: solid 2px cornflowerblue;
+}
+.input {
+  margin-right: 10px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.btns-shearch-clear {
+  display: flex;
+  justify-content: center;
+}
+.btn-form:focus {
+  outline: none;
+}
+.btn-form:hover {
+  background-color: hsla(219, 57%, 57%, 0.898);
+}
+
+.btn.is-hidden {
+  display: none;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+.spinner-border {
+  color: cornflowerblue;
+  border-style: dotted;
+  width: 50px;
+  height: 50px;
+}
+.spinner {
+  margin-top: 10px;
+  text-align: center;
+}
+.spinner.is-hidden {
+  display: none;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
